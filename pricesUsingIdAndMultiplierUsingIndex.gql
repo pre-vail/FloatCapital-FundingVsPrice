@@ -1,0 +1,20 @@
+query ($marketIds: [String!], $marketIndexAsString: String!) {
+  prices (
+    where: {
+      id_in: $marketIds
+    }
+    orderBy: timeUpdated
+    orderDirection: desc
+  ) {
+    id
+    price
+    timeUpdated
+  }
+  syntheticMarkets(
+    where: {
+      marketIndex: $marketIndexAsString
+    }
+  ) {
+		fundingRateMultiplier_e18
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "name": "funding-vs-price",
+  "version": "1.0.0",
+  "description": "Funding rate versus token price for https://float.capital",
+  "main": "FundingVsPrice.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "https://github.com/pre-vail",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "graphql-request": "^4.3.0"
+  }
+}
